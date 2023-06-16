@@ -13,31 +13,30 @@
 }
 
 .navbar {
-	z-index: 5;
 	width: 100%;
-	max-width: 1200px;
+	max-width: 1260px;
+	min-height: 30px;
 	margin-right: auto;
 	margin-left: auto;
 	padding: 20px;
-	position: relative;
 }
 
 .navbar-logo {
-	position: relative;
 	float: left;
 }
 
 .navbar-link {
-	position: relative;
 	float: right;
-	margin-right: 5px;
-	margin-left: 5px;
-	margin-bottom: 0px;
-	padding: 5px 10px;
 	font-size: 22px;
 	line-height: 20px;
 	letter-spacing: 0.25px;
 	text-decoration: none;
+	font-family: "Lucida console","Times new roman", sans-serif;
+	color: #08070a;
+	font-weight: 400;
+	opacity: 0.8;
+	cursor: pointer;
+	margin-top: 11px;
 }
 
 .main {
@@ -79,16 +78,87 @@
   	grid-template-rows: auto;
 }
 
+.content-block-img {
+  	padding: 40px 20px 60px;
+}
+
 .content-block-text {
 	margin-top: 20px;
 	margin-bottom: 0px;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: "Lucida console","Times new roman", sans-serif;
 	color: #08070a;
-	font-size: 32px;
+	font-size: 30px;
 	line-height: 46px;
 	font-weight: 400;
 }
 
-.content-block-img {
-  padding: 40px 20px 60px;
+.content-link {
+	text-decoration: underline;
+	text-decoration-thickness: 3px;
+	cursor: pointer;
+}
+
+.content-span {
+	color: #f8f6f6;
+	background-color: #08070a;
+	cursor: pointer;
+}
+
+.footer {
+position: static;
+  display: -ms-grid;
+  display: grid;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 120px;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+}
+
+.footer-line {
+-ms-grid-column-align: center;
+justify-self: center;
+width: 80%;
+height: 1px;
+background-color: #08070a;
+}
+
+.footer-menu {
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+width: 280px;
+-webkit-justify-content: space-around;
+-ms-flex-pack: distribute;
+justify-content: space-around;
+-webkit-box-align: center;
+-webkit-align-items: center;
+-ms-flex-align: center;
+align-items: center;
+-webkit-box-flex: 0;
+-webkit-flex: 0 auto;
+-ms-flex: 0 auto;
+}
+
+.footer-menu-email {
+display: inline-block;
+margin-right: auto;
+margin-left: auto;
+align: center;
+}
+
+.footer-menu-github {
+display: inline-block;
+margin-right: auto;
+margin-left: auto;
+align: center;
 }
