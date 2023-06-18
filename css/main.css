@@ -164,13 +164,14 @@
   		display: grid;
   		padding-bottom: 96px;
 		align-items: center;
-  		grid-column-gap: 0px;
+		grid-column-gap: 0px;
 		grid-row-gap: 48px;
   		grid-template-columns: 1fr;
 	}
 	
 	.content-block-img {
-		margin-left: 0px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.content-block-text {
@@ -179,77 +180,97 @@
 		font-weight: 400;
 		margin-left: 24px;
 	}
+
+	.content-highlight-info {
+		margin-left: 48px;
+	}
 }
 
 /* ================================ */
 
 .content-highlight {
 	border-radius: 16px;
-	border: 4px solid  #08070a;
-	width: 100%;
 	height: 550px;
 	margin-bottom: 96px;
-  	display: grid;
+  	display: flex;
+	flex-direction: row-reverse;
 	align-items: center;
-  	grid-column-gap: 48px;
-  	grid-template-columns: 1fr 0.5fr;
+	margin-left: 24px;
+	margin-right: 24px;
 }
 
-.content-highlight-img {
-	display: flex;
-	height: 100%;
-	flex-direction: column;
-	justify-content: center;
+.spotify { 
+	background-image: url("../img/spotify-portfolio.png"); 
 	overflow: hidden;
 }
 
-.content-highlight-img img {
-	margin-left: 24px;
-	padding: 24px 24px 0px;
+.science { 
+	background-image: url("../img/science-portfolio.png"); 
+	overflow: hidden;
 }
+
+.illustration { 
+	background-image: url("../img/illustration-portfolio.png"); 
+	overflow: hidden;
+}
+
 .content-highlight-info {
+	border-radius: 16px;
+	background-color: #08070a;
+	width: 300px;
+	height: 200px;
 	display: flex;
-	height: 100%;
 	flex-direction: column;
 	justify-content: center; 
+	margin-top: 288px;
+	margin-right: 48px;
 }
 
 .content-highlight-info-img {
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-start; 
+	justify-content: flex-start;
+       	margin-left: 24px;
+	margin-right: 24px;	
 }
 
 .content-highlight-info-img img {
 	margin-right: 24px;
-	border-radius: 16px;
 }
 
 .content-highlight-info-text {
 	font-family: "Lucida console", sans-serif;
-	color: #08070a;
-	font-size: 30px;
+	color: #f8f6f6;
+	font-size: 24px;
 	line-height: 1.5;
 	font-weight: 800;
-	margin-top: 24px;
+	margin-top: 12px;
 	margin-bottom: 12px;
+       	margin-left: 24px;
+	margin-right: 24px;	
 }
 .content-highlight-info-desc {
 	font-family: "Lucida console", sans-serif;
-	color: #08070a;
-	font-size: 15px;
+	color: #f8f6f6;
+	font-size: 12px;
 	line-height: 1;
 	font-weight: 200;
 	margin-bottom: 12px;
+       	margin-left: 24px;
+	margin-right: 24px;	
 }
 .content-highlight-info-link {
 	font-family: "Lucida console", sans-serif;
-	color: #08070a;
-	font-size: 15px;
+	color: #f8f6f6;
+	font-size: 12px;
 	line-height: 1;
 	font-weight: 600;
 	text-decoration: underline;
 	text-decoration-thickness: 1px;
 	cursor: pointer;
+       	margin-left: 24px;
+	margin-right: 24px;	
 }
+
+/* ================================ */
 
